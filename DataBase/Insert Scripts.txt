@@ -1,0 +1,29 @@
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('1', 'Dell','Laptops' ,'Inspiron 17', '156498627493', '08400581593516', '','','NEEL','','NEEL','Y');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('2', 'Lenova','Desktops' ,'YOGA 710', '155918622420', '08400589273319', '','','NEEL','','NEEL','N');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('3', 'HP','Mouse','HP X300', '155918622527', '08400589273681', '','','NEEL','','NEEL','Y');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('4', 'Microsoft','Laptops' ,'Surface Book', '156620627463', '08400581593727', '','','NEEL','','NEEL','Y');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('5', 'ASUS','Phones' ,'Zenfone AR', '156620627452', '084005815936278', '','','NEEL','','NEEL','Y');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('6', 'Apple','Ipod' ,'Ipod Touch', '156620627426', '084005815938278', '','','NEEL','','NEEL','N');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('7', 'Microsoft','Phones' ,'Lumia 810', '162720627452', '012005815936278', '','','NEEL','','NEEL','N');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('8', 'Samsung','TV' ,'QLED', '156620627409', '013205815936278', '','','NEEL','','NEEL','Y');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('9', 'Samsung','Phones' ,'Samsung S8', '156620627625', '0810058159362709', '','','NEEL','','NEEL','Y');
+
+INSERT INTO  Products(Id, Manufacturer, Name, DESCRIPTION, EAN, GTIN, UOM, CreatedTime, CreatedBy, UPDATEDTIME, UPDATEDBY, IsActive)
+VALUES ('10', 'Xiaomi','Phones' ,'Redmi Note 4', '15662062622', '084005878036278', '','','NEEL','','NEEL','Y');

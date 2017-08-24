@@ -1,0 +1,5 @@
+Drop table Suppliers;
+Drop table Products;
+Drop table ProductDomiciles;
+Drop table SupplierProduct;
+
