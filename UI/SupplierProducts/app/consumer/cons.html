@@ -1,0 +1,77 @@
+<div class="container" >
+    <div style="text-align:left">
+         <h2>Consumer Details :</h2>
+    </div>
+    <br/>
+    <form #userForm="ngForm" (ngSubmit)= "onSave(userForm.value)">
+        
+        
+        <div class="form-group">
+            <label class="neel">Name </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder=" First Name" #nameRef="ngModel" name="Name" ngModel><span style="color:red">*</span> &nbsp;
+            <input style="border-radius:3px" type="text"  value={{consumers?.middleName}} placeholder=" Middle Name" name="Name" ngModel> &nbsp;
+            <input style="border-radius:3px" type="text"  value={{consumers?.lastName}} placeholder=" Last Name" #nameRef="ngModel" name="Name" ngModel><span style="color:red">*</span>
+            </span>
+            <span *ngIf= "nameRef.touched && nameRef.errors">
+                <span [hidden]="!nameRef.errors.required">
+                    This field cannot be blank
+                </span>
+            </span>    
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">Email </label>
+            <input class="neel" type="text" value={{consumers?.email}} style="border-radius:3px;width: 550px" #mailRef="ngModel" pattern="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required 
+            placeholder="Mail Address" name="Email" ngModel>  <span style="color:red">*</span>
+            <span *ngIf= "mailRef.errors && (mailRef.dirty || mailRef.touched)">
+           <!--"mailRef.errors && (mailRef.dirty || mailRef.touched)"
+           "phRef.errors && (phRef.dirty || phRef.touched)"-->
+                
+                <span [hidden]="!mailRef.errors.required">
+                    Please enter your email ID
+                </span>
+                 <span [hidden]="!mailRef.errors.pattern">
+                    This doesn't look like a valid email ID
+                </span>
+            </span>
+        </div>
+
+        <div class="form-group">
+            <label class="neel">Phone </label>
+            <input type="text" #phRef="ngModel" value={{consumers?.phone}} pattern="\(?\d{3}\)?-? *\d{3}-? *-?\d{4}$"placeholder="Phone Number" style="width: 545px; border-radius:3px " required name="Phone" ngModel><span style="color:red">*</span>
+            <span *ngIf= "phRef.errors && (phRef.dirty || phRef.touched)">
+                <span [hidden]="!phRef.errors.required">
+                    Please Enter your phone number
+                </span>
+                 <span [hidden]="!phRef.errors.pattern">
+                    Please enter a valid 10 digit Phone number
+                </span>
+            </span>    
+        </div>
+        <div class="forms-group">
+           <label class="neel"> Status </label>
+           <select name="Status" value={{consumers?.status}} style="width: 150px;border-radius:3px;">
+                <option value="1">Active</option>
+                <option value="0">Inactive</option>
+           </select> 
+        </div>
+        <br/>
+        <div class="form-group">
+            <label class="neel">Handle </label>
+            <input type="text" value={{consumers?.handle}} required placeholder="Consumer unique id " name="Handle" style="width: 545px;border-radius:3px" ngModel>    
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <!--<button type="reset" class="btn btn-primary">Cancel</button>-->
+        <button class="btn" (click)= "gotoDepartments()" > Cancel</button>
+        </form>
+ 
+  <!-- <ul *ngIf="consumers != undefined">
+         <li> Name: {{consumers?.firstName}}{{employees?.middleName}}{{employees?.lastName}} </li>
+         <li> Email: {{consumers?.email}} </li>
+         <li> Phone:{{consumers?.phone}} </li>
+         <li> Status:{{consumers?.status}} </li>
+         <li> Handle:{{consumers?.handle}} </li>
+    </ul>-->
+<h4>{{errorMsg}}</h4>
+

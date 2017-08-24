@@ -1,0 +1,50 @@
+<div class="container" >
+    <div style="text-align:left">
+         <h2>Supplier Product Details </h2>
+    </div>
+    <br/>
+    <form #userForm="ngForm" (ngSubmit)= "onSave(userForm.value)">
+       
+        <div class="form-group">
+            <label class="neel">Currency: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Currency" #nameRef="ngModel" name="Currency" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+        <div class="form-group">
+            <label class="neel">SKU: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="SKU" #nameRef="ngModel" name="SKU" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+      
+        
+        <div class="form-group">
+            <label class="neel">Priority: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Priority" #nameRef="ngModel" name="Priority" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+
+      
+        <div class="form-group">
+            <label class="neel">OfferBucketSize: </label>
+            <span>
+            <input  style="border-radius:3px;margin-left:70px;" type="text" value={{consumers?.firstName}} required placeholder="OfferBucketSize" #nameRef="ngModel" name="OfferBucketSize" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+
+           
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <!--<button type="reset" class="btn btn-primary">Cancel</button>-->
+        <button class="btn" (click)= "gotoDepartments()" > Cancel</button>
+        </form>
+ 
+
+<h4>{{errorMsg}}</h4>
+

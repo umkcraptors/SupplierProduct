@@ -1,0 +1,51 @@
+<div class="container" >
+    <div style="text-align:left">
+         <h2>Product Domiciles Details </h2>
+    </div>
+    <br/>
+    <form #userForm="ngForm" (ngSubmit)= "onSave(userForm.value)">
+            <div class="form-group">
+                    <label class="neel">Country: </label>
+                    <span>
+                    <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Country" #nameRef="ngModel" name="Country" ngModel><span style="color:red">*</span> &nbsp;
+                    </span>
+                      
+                </div> 
+       
+        <div class="form-group">
+            <label class="neel">Currency: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Currency" #nameRef="ngModel" name="Currency" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+        <div class="form-group">
+            <label class="neel">SKU: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="SKU" #nameRef="ngModel" name="SKU" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+      
+        
+        <div class="form-group">
+            <label class="neel">MSRP: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="MSRP" #nameRef="ngModel" name="MSRP" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+
+      
+        
+
+           
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <!--<button type="reset" class="btn btn-primary">Cancel</button>-->
+        <button class="btn" (click)= "gotoDepartments()" > Cancel</button>
+        </form>
+ 
+
+<h4>{{errorMsg}}</h4>
+

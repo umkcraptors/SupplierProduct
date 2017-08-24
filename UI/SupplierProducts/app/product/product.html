@@ -1,0 +1,67 @@
+<div class="container" >
+    <div style="text-align:left">
+         <h2>Product Details </h2>
+    </div>
+    <br/>
+    <form #userForm="ngForm" (ngSubmit)= "onSave(userForm.value)">
+        
+        
+        <div class="form-group">
+            <label class="neel">Manufacturer: </label>
+            <span>
+            <input  style="border-radius:3px;margin-left:40px;" type="text" value={{consumers?.firstName}} required placeholder="Manufacturer" #nameRef="ngModel" name="Manufacturer" ngModel><span style="color:red">*</span> &nbsp;
+            
+            </span>
+             
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">Name: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Name" #nameRef="ngModel" name="Name" ngModel><span style="color:red">*</span> &nbsp;
+           
+            </span>
+               
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">Description: </label>
+            <span>
+            <input  style="border-radius:3px;margin-left:40px;" type="text" value={{consumers?.firstName}} required placeholder="Description" #nameRef="ngModel" name="Description" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">EAN: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="EAN" #nameRef="ngModel" name="EAN" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+        <div class="form-group">
+            <label class="neel">GTIN: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="GTIN" #nameRef="ngModel" name="GTIN" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+        <div class="form-group">
+            <label class="neel">UOM: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="UOM" #nameRef="ngModel" name="UOM" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+        
+
+       
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <!--<button type="reset" class="btn btn-primary">Cancel</button>-->
+        <button class="btn" (click)= "gotoDepartments()" > Cancel</button>
+        </form>
+ 
+
+<h4>{{errorMsg}}</h4>
+

@@ -1,0 +1,58 @@
+<div class="container">
+    <div style="text-align:left">
+         <h2>Supplier Details </h2>
+    </div>
+    <br/>
+    <form #userForm="ngForm" (ngSubmit)= "onSave(userForm.value)">
+        
+        
+        <div class="form-group">
+            <label class="neel">Domain: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Domain" #nameRef="ngModel" name="Domain" ngModel><span style="color:red">*</span> &nbsp;
+            
+            </span>
+             
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">SupplierType: </label>
+            <span>
+            <input  style="border-radius:3px;margin-left:40px;" type="text" value={{consumers?.firstName}} required placeholder="SupplierType" #nameRef="ngModel" name="SupplierType" ngModel><span style="color:red">*</span> &nbsp;
+            
+            </span>
+            
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">Name: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Name" #nameRef="ngModel" name="Name" ngModel><span style="color:red">*</span> &nbsp;
+           
+            </span>
+               
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">Priority: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Priority" #nameRef="ngModel" name="Priority" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+
+        <div class="form-group">
+            <label class="neel">Currency: </label>
+            <span>
+            <input  style="border-radius:3px" type="text" value={{consumers?.firstName}} required placeholder="Currency" #nameRef="ngModel" name="Currency" ngModel><span style="color:red">*</span> &nbsp;
+            </span>
+              
+        </div> 
+        <button type="submit" class="btn btn-primary">Save</button>
+        <!--<button type="reset" class="btn btn-primary">Cancel</button>-->
+        <button class="btn" (click)= "gotoDepartments()" > Cancel</button>
+        </form>
+ 
+
+<h4>{{errorMsg}}</h4>
+

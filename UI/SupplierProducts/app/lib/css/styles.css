@@ -1,0 +1,306 @@
+/*app.component.ts style sheet*/
+
+
+h1 {
+    color:#cfd8dc;
+    background-color:black;
+    font-size:30px;
+    font-family: verdana;
+    padding:15px;
+	  margin-top:10px;
+    text-align:center;
+    
+}
+/* opacity: 0.5;
+    filter: alpha(opacity=50); 
+    */
+h2 {
+    font-family: Helvetica; 
+    color:#333;
+    margin-left:60px;
+    margin-top: 100px;
+}
+
+
+img {
+    
+    margin-left: 25px;
+    margin-right: 16px;
+    width: 95%;
+    height: 68%;
+    
+    opacity: 0.9;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+
+    
+}
+.neel 
+    {
+        font-family: Helvetica;
+     margin: 0 0 2em 0;
+     list-style-type: none;
+     padding-left: 0;
+     width: 3.5em;
+     border-top-right-radius: 5px;
+    }
+
+
+
+/*#menu {
+    font-family:  Helvetica;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}*/
+
+#lis {
+    float: left;
+}
+
+#lis a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#lis a:hover {
+    background-color: #111;
+}
+
+#lis a.active { 
+   color: #eee;
+   background-color:grey;
+
+   }
+
+/*contact-details.css*/
+a{
+    cursor: pointer;
+    cursor: hand;
+ }
+
+ .button {
+     color: #888;
+     font-family: Arial;
+     background-color: #eee;
+     border: none;
+     padding: 5px 10px;
+     border-radius: 4px;
+     cursor: pointer;
+     cursor: hand;
+ }
+
+ .button:hover {
+     background-color: #cfd8dc;
+ }
+ .button:disabled {
+     background-color: #eee;
+     color: #aaa;
+     cursor: auto;
+ }
+
+ .names:hover {
+     background-color: #cfd8dc;
+ }
+
+
+ /*  button {
+     color: #888;
+     font-family: Arial;
+     background-color: #eee;
+     border: none;
+     padding: 5px 10px;
+     border-radius: 4px;
+     cursor: pointer;
+     cursor: hand;
+ }
+
+ button:hover {
+     background-color: #cfd8dc;
+ }
+ button:disabled {
+     background-color: #eee;
+     color: #aaa;
+     cursor: auto;
+ }*/
+ /*team.component*/
+
+ nav a {
+     padding: 5px 10px;
+     text-decoration: none;
+     margin-top: 10px;
+     display: inline-block;
+     background-color: #eee;
+     border-radius: 4px;
+ }
+
+ nav a:visited, a:link {
+     color: #607D8B;
+ }
+
+ nav a.hover {
+     color: #039be5;
+     background-color: #CFD8DC;
+ }
+
+ nav a.active {
+     color: #039be5;
+ }
+ input{
+    margin-left:20px;  
+ }
+ #menu {
+     float:left;
+ }
+#menu > ul > li{
+    list-style: none;
+    float: left;
+    position: relative;   
+	margin-right: 0px;
+}
+#menu > ul > li > a {
+	font-size: 11px;
+	color: #111;
+	display: block;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 14px;
+	}
+#menu > ul > li.active{
+	background-color:#eb4800;
+}
+#menu > ul > li.active > a{
+	color:#fff;
+}
+#menu > ul a:hover{
+	color: #eb4800; 
+	text-decoration:none;
+}
+#menu .current{color: #eb4800 !important;}
+
+#menu ul ul {
+    background: none repeat scroll 0 0 #eee;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    position: absolute;
+    min-width:170px;
+	display:none;
+}
+#menu > ul > li > ul{
+    margin-left:10px;
+    margin-top:-12px;
+	border:1px solid #ddd;
+	border-top:0;
+}
+#menu ul ul li {
+    list-style: none outside none;
+    position: relative;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #ddd;
+}
+#menu ul ul li:last-child{
+    border-bottom: none !important
+}
+#menu ul ul li.menu-last{border-bottom: none;}
+#menu ul ul a{
+    display: block;
+    padding:7px 10px;
+    color: #333;
+    font-size: 12px;
+}
+#menu ul ul a:hover,#menu > ul > li:hover > a{color: #fff;background-color:#eb4800}
+#menu ul ul a:hover{background-color:#eb4800;}
+#menu > ul > li:hover {visibility: inherit;}
+#menu li:hover {visibility: inherit;}
+#menu li:hover ul,
+#menu li.sfHover ul {
+    left: -10px;
+    top: 52px;
+    z-index: 2299;
+}
+#menu li li:hover ul,
+#menu li li.sfHover ul {
+    left: 130px;
+    top: 0px;
+}
+#menu li.sfHover > a{
+	color:#eb4800;
+}
+#menu .sf-sub-indicator{
+	display:none;
+}
+.pull-right{
+	background-color:#fff;
+	padding-left:10px;	
+}
+.btn:focus,
+input:focus {
+    outline: none !important;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+    transition: .5s ease-out;
+}
+
+.btn:focus {
+    background: #b73426;
+    color: #fff;
+    border: 2px solid #f53f2c;
+}
+
+.btn-default {
+    background: none;
+    color: #f53f2c;
+    border: 2.5px solid #f53f2c;
+}
+
+.btn-default:hover {
+    background: #f53f2c;
+    color: #fff;
+    border: 2px solid #b73426;
+}
+
+.btn-reverse {
+    border: 2.5px solid #fff;
+    color: #fff;
+    border-radius: 0;
+}
+
+.btn-reverse:hover {
+    color: #fff;
+    border-radius: 45px;
+}
+
+.btn-inverse {
+    background: #f53f2c;
+    color: #fff;
+    border: 2.5px solid #f53f2c;
+    margin-top: 0;
+}
+
+.btn-inverse:hover {
+    background: #b73426;
+    color: #fff;
+    border: 2.5px solid #f53f2c;
+}
+
+
+#top-bar{
+	background-color:grey;
+	padding:10px;
+	color:white;
+	border-radius: 4px;
+}
